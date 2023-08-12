@@ -1,0 +1,502 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1621274403997-37aace184f49?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1');
+    background-size: cover;
+}
+.tot_container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container{
+    margin-top:20px;
+    height: 55vh;
+    display: flex;
+    justify-content: space-between;
+}
+.leftSide{
+    margin: 1rem 0 0 1rem;
+    height: 80%;
+    width: 20%;
+}
+.time{
+    height: 20%;
+    display: flex;
+    justify-content: start;
+}
+.act{
+    font-size: 3rem;
+    font-weight: 300;
+    color: white;
+}
+.ampm{
+    color: white;
+    font-weight: 200;
+    font-size: 1.25rem;
+    height: 100%;
+    padding-top: 1.8rem;
+}
+.day{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.date{
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: white;
+}
+.details{
+    /* height: 60%;
+    width: 90%; */
+    height: 27vh;
+    width: 35vh;
+    margin-top: 0.5rem;
+    /*margin-left: 1rem;*/   
+    
+}
+.report{
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.705);    
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 1rem;    
+    padding: 1rem;
+    padding-top: 1.3rem;
+}
+.contents{
+    color: white;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+}
+.rightSide{
+    margin: 1rem 0 0 1rem;
+    height: 20%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 1.5rem;
+}
+.place{
+    color:white;
+    font-weight: 200;
+}
+.map{
+    color:white;
+    font-size: 0.8rem;
+}
+.bottom{
+    height: 33vh;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.699);
+    text-align: center;
+}
+.days{
+    height: 80%;
+    min-width: 12.2rem;    
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.705);
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.39); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: 300;
+    color:white;
+    font-size: small;
+    transition: all ease-in-out 0.5s; 
+}
+.Day{
+    align-self: center;      
+}
+.Day p{ 
+    font-weight: 500;   
+    width: max-content;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;  
+    background-color: rgba(128, 128, 128, 0.452);
+    border-radius: 1rem;
+}
+.temp{
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+.monday{
+    transition: ease-in-out 0.5s ;  
+}
+.monday .weekdays2{
+    display: none;
+}
+/*.monday:hover .weekdays{
+    display: none;
+}
+.monday:hover .weekdays2{
+    display:unset;
+}
+.monday:hover{
+    width: 18%;
+    transition: ease-in-out 0.7s ;  
+    display: flex;
+    flex-direction: row; 
+}
+.monday:hover ::after{
+    transition: ease-in-out 0.7s ; 
+}
+.monday:hover .Day{
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.monday:hover .img{
+    order: 1;
+    flex:1;
+    align-self: center;
+}
+.monday:hover .temp{
+    order: 3;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    bottom: 2rem;
+} */
+
+
+
+.tuesday{
+    transition: ease-in-out 0.5s ;  
+}
+
+.tuesday .weekdays2{
+    display: none;
+}
+/*.tuesday:hover .weekdays{
+    display: none;
+}
+.tuesday:hover .weekdays2{
+    display:unset;
+}
+.tuesday:hover{
+    width: 18%;
+    transition: ease-in-out 0.7s ;  
+    display: flex;
+    flex-direction: row; 
+}
+.tuesday:hover ::after{
+    transition: ease-in-out 0.7s ; 
+}
+.tuesday:hover .Day{
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tuesday:hover .img{
+    order: 1;
+    flex:1;
+    align-self: center;
+}
+.tuesday:hover .temp{
+    order: 3;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    bottom: 2rem;
+} */
+
+
+.wednesday{
+    transition: ease-in-out 0.5s ;  
+}
+
+.wednesday .weekdays2{
+    display: none;
+}
+/* .wednesday:hover .weekdays{
+    display: none;
+}
+.wednesday:hover .weekdays2{
+    display:unset;
+}
+.wednesday:hover{
+    width: 18%;
+    transition: ease-in-out 0.7s ;  
+    display: flex;
+    flex-direction: row; 
+}
+.wednesday:hover ::after{
+    transition: ease-in-out 0.7s ; 
+}
+.wednesday:hover .Day{
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wednesday:hover .img{
+    order: 1;
+    flex:1;
+    align-self: center;
+}
+.wednesday:hover .temp{
+    order: 3;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    bottom: 2rem;
+} */
+
+
+.thursday{
+    transition: ease-in-out 0.5s ;  
+}
+
+.thursday .weekdays2{
+    display: none;
+}
+/* .thursday:hover .weekdays{
+    display: none;
+}
+.thursday:hover .weekdays2{
+    display:unset;
+}
+.thursday:hover{
+    width: 18%;
+    transition: ease-in-out 0.7s ;  
+    display: flex;
+    flex-direction: row; 
+}
+.thursday:hover ::after{
+    transition: ease-in-out 0.7s ; 
+}
+.thursday:hover .Day{
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thursday:hover .img{
+    order: 1;
+    flex:1;
+    align-self: center;
+}
+.thursday:hover .temp{
+    order: 3;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    bottom: 2rem;
+} */
+
+
+.friday{
+    transition: ease-in-out 0.5s ;  
+}
+
+.friday .weekdays2{
+    display: none;
+}
+/* .friday:hover .weekdays{
+    display: none;
+}
+.friday:hover .weekdays2{
+    display:unset;
+}
+.friday:hover{
+    width: 18%;
+    transition: ease-in-out 0.7s ;  
+    display: flex;
+    flex-direction: row; 
+}
+.friday:hover ::after{
+    transition: ease-in-out 0.7s ; 
+}
+.friday:hover .Day{
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.friday:hover .img{
+    order: 1;
+    flex:1;
+    align-self: center;
+}
+.friday:hover .temp{
+    order: 3;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    bottom: 2rem;
+} */
+
+
+.saturday{
+    transition: ease-in-out 0.5s ;  
+}
+
+.saturday .weekdays2{
+    display: none;
+}
+/* .saturday:hover .weekdays{
+    display: none;
+}
+.saturday:hover .weekdays2{
+    display:unset;
+}
+.saturday:hover{
+    width: 18%;
+    transition: ease-in-out 0.7s ;  
+    display: flex;
+    flex-direction: row; 
+}
+.saturday:hover ::after{
+    transition: ease-in-out 0.7s ; 
+}
+.saturday:hover .Day{
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.saturday:hover .img{
+    order: 1;
+    flex:1;
+    align-self: center;
+}
+.saturday:hover .temp{
+    order: 3;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    bottom: 2rem;
+} */
+.searchbar{
+    height: 20%;
+    width: 45%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.searchbar input{
+    width: 100%;
+    height: 50%;
+    border: 1px solid white;
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.582);
+}
+.searchbar input::placeholder{
+    color:white;
+}
+.searchbar button{
+    color: white;
+    margin-top: 0.5rem;
+    height: 40%;
+    width: 30%;
+    align-self: center;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 10%;
+}
+@media (min-width:580px)and  (max-width: 980px){
+    .bottom{
+        overflow-x: scroll;
+    }
+    .searchbar{
+        width: 100%;
+    }
+    .leftSide{
+        margin-top: 100px;
+    }
+    .rightSide{
+        margin-top: 100px;
+    }
+    .map{
+        font-size: 0.75rem;
+    }
+    .act{
+        padding-left: 1rem;
+        font-size: 2.5rem;
+    }
+    .ampm{
+        font-size: 0.75rem;
+    }
+    .date{
+        
+        padding-left: 0.5rem;
+        font-size: 1rem;
+    }
+    .details{
+        margin-right: 0.5rem;
+        height: 23vh;
+        width: 30vh;
+    }
+    .contents{
+        font-size: 0.90rem;
+    }
+}
+@media (max-width:580px){
+    .bottom{
+        overflow-x: scroll;
+    }
+    .searchbar{
+        width: 100%;
+    }
+    .leftSide{
+        margin-top: 100px;
+    }
+    
+    .rightSide{
+        margin-top: 100px;
+    }
+    .place{
+        font-size: 1rem;
+    }
+    .map{
+        font-size: 0.5rem;
+    }
+    .act{
+        padding-left: 1rem;
+        font-size: 2rem;
+    }
+    .ampm{
+        font-size: 0.5rem;
+    }
+    .date{
+        padding-left: 1rem;
+        font-size: 0.75rem;
+    }
+    .details{
+        height: 20vh;
+        width: 27vh;
+    }
+    .contents{
+        font-size: 0.80rem;
+    }
+}

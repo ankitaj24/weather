@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,600&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="icon" href="cloudy.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tot_container">
+        <div class="container">
+            <div class="leftSide">
+                <div class="time">
+                    <p class="act" id="act"></p>
+                    <p class="ampm"></p>
+                </div>
+                <div class="day">
+                    <p class="date">Monday,24 May</p>
+                </div>
+                <div class="details">
+                    <div class="report">
+                        <div class="contents">
+                            <p>Humidity</p>
+                            <p><span id="humidity"></span></p>
+                        </div>
+                        <div class="contents">
+                            <p>Pressure</p>
+                            <p>1008</p>
+                        </div>
+                        <div class="contents">
+                            <p>Wind Speed</p>
+                            <p><span id="wind_speed"></span></p>
+                        </div>
+                        <div class="contents">
+                            <p>Feels Like</p>
+                            <p><span id="feels_like"></span></p>
+                        </div>
+                        <div class="contents">
+                            <p>Cloud PCT</p>
+                            <p><span id="cloud_pct"></span></p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="searchbar">
+                <input id="city" type="text" placeholder="Search for your location">
+                <button id="submit">Search</button>
+            </div>
+            <div class="rightSide">
+                <h2 class="place"><span id="cityName"></span></h2>
+                <p class="map">10.8505N 76.2711E</p>
+            </div>   
+        </div>
+        <div class="bottom">
+            <div class="days monday">
+                <div class="Day">
+                    <p class="weekdays">TEMP</p>
+                    <p class="weekdays2">Temperature</p>
+                </div>
+                <div class="img">
+                    <img src="weather (2).png" alt="">
+                </div>
+                <div class="temp">
+                    <p>Current Temp. : <span id="temp"></span> &deg;C</p>
+                </div>
+            </div>
+            <div class="days tuesday">
+                <div class="Day">
+                    <p class="weekdays">MAX_TEMP</p>
+                    <p class="weekdays2">Max Temperature</p>
+                </div>
+                <div class="img">
+                    <img src="weather (2).png" alt="">
+                </div>
+                <div class="temp">
+                    <p>Max Temp. : <span id="max_temp"></span> &deg;C</p>
+                </div>
+            </div>
+            <div class="days wednesday">
+                <div class="Day">
+                    <p class="weekdays">MIN_TEMP</p>
+                    <p class="weekdays2">Min Temperature</p>
+                </div>
+                <div class="img">
+                    <img src="weather (2).png" alt="">
+                </div>
+                <div class="temp">
+                    <p>Min Temp. : <span id="min_temp"></span> &deg;C</p>
+                    
+                </div>
+            </div>
+            <div class="days thursday">
+                <div class="Day">
+                    <p class="weekdays">WIND_DEG.</p>
+                    <p class="weekdays2">Wind Degree</p>
+                </div>
+                <div class="img">
+                    <img src="weather (2).png" alt="">
+                </div>
+                <div class="temp">
+                    <p>Wind Deg. : <span id="wind_degrees"></span></p>
+                </div>
+            </div>
+            <div class="days friday">
+                <div class="Day">
+                    <p class="weekdays">RISE</p>
+                    <p class="weekdays2">Sunrise</p>
+                </div>
+                <div class="img">
+                    <img src="weather (2).png" alt="">
+                </div>
+                <div class="temp">
+                    <p>Sunrise. : <span id="sunrise"></span></p>
+                </div>
+            </div>
+            <div class="days saturday">
+                <div class="Day">
+                    <p class="weekdays">SET</p>
+                    <p class="weekdays2">Sunset</p>
+                </div>
+                <div class="img">
+                    <img src="weather (2).png" alt="">
+                </div>
+                <div class="temp">
+                    <p>SunSet. : <span id="sunset"></span></p>
+                </div>
+            </div>
+            <!-- <div class="days sunday">
+                <div class="Day">
+                    <p class="weekdays">Sun</p>
+                    <p class="weekdays2">Sunday</p>
+                </div>
+                <div class="img">
+                    <img src="weather (2).png" alt="">
+                </div>
+                <div class="temp">
+                    <p>Night - 24.02 &deg;C</p>
+                    <p>Day - 30.08 &deg;C</p>
+                </div>
+            </div>
+            <div class="days monday2">
+                <div class="Day">
+                    <p class="weekdays">Mon</p>
+                    <p class="weekdays2">Monday</p>
+                </div>
+                <div class="img">
+                    <img src="weather (2).png" alt="">
+                </div>
+                <div class="temp">
+                    <p>Night - 24.02 &deg;C</p>
+                    <p>Day - 30.08 &deg;C</p>
+                </div>
+            </div> -->
+        </div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
